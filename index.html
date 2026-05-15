@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
-			content="Maxim Koshel is a Senior DevOps Engineer specializing in Kubernetes, CI/CD, service mesh, infrastructure automation, monitoring, and production reliability."
+			content="Maxim Koshel is a Senior DevOps Engineer specializing in Kubernetes, CI/CD, service mesh, infrastructure automation, observability, and production reliability."
 		/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -15,10 +15,10 @@
 			<nav class="site-nav" aria-label="Primary navigation">
 				<a class="brand" href="#home">Maxim Koshel</a>
 				<div class="nav-links">
-					<a href="#services">What I do</a>
-					<a href="#proof">Proof</a>
-					<a href="#work">Projects</a>
-					<a href="#resume">Resume</a>
+					<a href="#expertise">Expertise</a>
+					<a href="#impact">Impact</a>
+					<a href="#case-studies">Case studies</a>
+					<a href="#timeline">Timeline</a>
 					<a href="#contact">Contact</a>
 				</div>
 			</nav>
@@ -26,200 +26,196 @@
 
 		<main>
 			<section id="home" class="hero">
-				<div class="hero-media" aria-hidden="true">
+				<div class="hero-visual" aria-hidden="true">
 					<img src="images/me.jpg" alt="" />
 				</div>
 				<div class="hero-content">
 					<p class="eyebrow">Senior DevOps Engineer</p>
-					<h1>Hi, I am Maxim. I keep complex systems shipping safely.</h1>
+					<h1>Infrastructure leadership for payment platforms that cannot drift, stall, or surprise.</h1>
 					<p class="hero-text">
-						I work on the platform layer behind fintech products: Kubernetes, CI/CD,
-						service mesh, secrets, observability, and production release automation.
+						I design and operate the delivery systems behind high-change fintech environments:
+						Kubernetes, CI/CD, service mesh, secrets, certificates, monitoring, and production release control.
 					</p>
 					<div class="hero-actions">
-						<a class="button primary" href="Maxim_Koshel.pdf" target="_blank" rel="noopener">Open resume</a>
-						<a class="button secondary" href="#proof">See proven impact</a>
-					</div>
-					<div class="profile-links" aria-label="Profile links">
-						<a href="https://github.com/maximkoshel" target="_blank" rel="noopener">GitHub</a>
-						<a href="https://www.linkedin.com/in/maxim-koshel-00a981197" target="_blank" rel="noopener">LinkedIn</a>
-						<a href="https://www.kaggle.com/maximkoshel" target="_blank" rel="noopener">Kaggle</a>
+						<a class="button primary" href="#contact">Start a conversation</a>
+						<a class="button secondary" href="#impact">Review impact</a>
 					</div>
 				</div>
-				<aside class="hero-proof" aria-label="Career highlights">
-					<div>
-						<strong>400+</strong>
-						<span>delivered work items</span>
-					</div>
-					<div>
-						<strong>100+</strong>
-						<span>pipeline migrations</span>
-					</div>
-					<div>
-						<strong>8+</strong>
-						<span>Kubernetes clusters</span>
+				<aside class="hero-card" aria-label="Career snapshot">
+					<p>Platform scope</p>
+					<strong>400+ shipped work items across 6 years of fintech DevOps delivery.</strong>
+					<div class="hero-tags">
+						<span>Kubernetes</span>
+						<span>Azure DevOps</span>
+						<span>Istio</span>
+						<span>Terraform</span>
+						<span>Vault</span>
+						<span>Dynatrace</span>
 					</div>
 				</aside>
 			</section>
 
-			<section id="services" class="section">
+			<section id="expertise" class="section section-dark">
 				<div class="section-heading">
-					<p class="eyebrow">What I do</p>
-					<h2>Useful DevOps work, explained in plain terms.</h2>
+					<p class="eyebrow">Expertise</p>
+					<h2>Senior platform work across delivery, runtime, security, and reliability.</h2>
 				</div>
-				<div class="service-grid">
+				<div class="expertise-grid">
 					<article>
 						<span>01</span>
-						<h3>Make deployments predictable</h3>
-						<p>Build and improve CI/CD pipelines, release flows, quality gates, and automation so teams can ship with less manual coordination.</p>
+						<h3>Delivery engineering</h3>
+						<p>YAML pipelines, release flows, build templates, quality gates, security scanning, and predictable production deployment paths.</p>
 					</article>
 					<article>
 						<span>02</span>
-						<h3>Run production platforms</h3>
-						<p>Support Kubernetes clusters, service routing, scaling, storage, secrets, certificates, and monitoring across demanding environments.</p>
+						<h3>Runtime platforms</h3>
+						<p>Kubernetes operations, Helm, KEDA, storage, traffic routing, cluster migrations, and resource governance.</p>
 					</article>
 					<article>
 						<span>03</span>
-						<h3>Turn operations into systems</h3>
-						<p>Replace repetitive operations with scripts, schedulers, IaC, dashboards, and safer workflows that are easier to audit and repeat.</p>
+						<h3>Production controls</h3>
+						<p>Service mesh, mTLS, egress policy, secrets injection, certificate lifecycle, observability, and incident investigation.</p>
 					</article>
 				</div>
 			</section>
 
-			<section id="proof" class="section proof-section">
+			<section id="impact" class="section">
+				<div class="section-heading compact">
+					<p class="eyebrow">Measured impact</p>
+					<h2>Public summary of delivery scale.</h2>
+					<p>
+						This is a curated summary from internal Azure DevOps history. Raw ticket IDs, internal service names,
+						incident details, and environment-level implementation data are intentionally not published.
+					</p>
+				</div>
+				<div class="metric-grid">
+					<article>
+						<strong>400+</strong>
+						<span>User stories delivered</span>
+					</article>
+					<article>
+						<strong>100+</strong>
+						<span>Classic pipelines migrated to YAML</span>
+					</article>
+					<article>
+						<strong>21+</strong>
+						<span>Production releases managed</span>
+					</article>
+					<article>
+						<strong>55+</strong>
+						<span>Enterprise workflows automated</span>
+					</article>
+					<article>
+						<strong>8+</strong>
+						<span>Kubernetes clusters supported</span>
+					</article>
+					<article>
+						<strong>30+</strong>
+						<span>Certificate lifecycle operations</span>
+					</article>
+				</div>
+			</section>
+
+			<section id="case-studies" class="section case-section">
 				<div class="section-heading">
-					<p class="eyebrow">Proof from real delivery</p>
-					<h2>Public summary of 400+ Azure DevOps user stories.</h2>
-					<p>
-						The raw internal ticket list stays private. This page turns it into recruiter-friendly proof:
-						scale, ownership, technologies, and business-facing outcomes.
-					</p>
+					<p class="eyebrow">Case studies</p>
+					<h2>Representative work, framed for public review.</h2>
 				</div>
-				<div class="proof-layout">
-					<div class="metric-strip">
-						<div><strong>21+</strong><span>production releases</span></div>
-						<div><strong>55+</strong><span>job workflows automated</span></div>
-						<div><strong>30+</strong><span>certificate operations</span></div>
-						<div><strong>6 yrs</strong><span>fintech DevOps delivery</span></div>
-					</div>
-					<div class="outcome-list">
-						<article>
+				<div class="case-list">
+					<article>
+						<div>
+							<span class="case-period">2025 - 2026</span>
+							<h3>Service mesh adoption</h3>
+						</div>
+						<p>Introduced Istio patterns across environments, covering sidecar strategy, traffic controls, mTLS, and egress policy readiness.</p>
+						<ul>
+							<li>Istio</li>
+							<li>Envoy</li>
+							<li>mTLS</li>
+							<li>Helm</li>
+						</ul>
+					</article>
+					<article>
+						<div>
+							<span class="case-period">2022 - 2026</span>
 							<h3>CI/CD modernization</h3>
-							<p>Migrated large release and build flows from Classic pipelines to YAML, with stronger quality, security, and repeatability.</p>
-							<ul>
-								<li>Azure DevOps</li>
-								<li>YAML</li>
-								<li>SonarQube</li>
-								<li>Snyk</li>
-							</ul>
-						</article>
-						<article>
-							<h3>Kubernetes and service mesh</h3>
-							<p>Supported cluster operations and helped introduce Istio patterns for traffic control, mTLS, sidecars, and egress policy.</p>
-							<ul>
-								<li>Kubernetes</li>
-								<li>Istio</li>
-								<li>Helm</li>
-								<li>KEDA</li>
-							</ul>
-						</article>
-						<article>
-							<h3>Secrets, certificates, and reliability</h3>
-							<p>Improved certificate lifecycle handling, secure secret injection, monitoring coverage, and production investigation workflows.</p>
-							<ul>
-								<li>Vault</li>
-								<li>Akeyless</li>
-								<li>Dynatrace</li>
-								<li>Splunk</li>
-							</ul>
-						</article>
-						<article>
+						</div>
+						<p>Moved large build and release surfaces toward YAML, stronger scanning, standardized templates, and repeatable promotion flows.</p>
+						<ul>
+							<li>Azure DevOps</li>
+							<li>YAML</li>
+							<li>SonarQube</li>
+							<li>Snyk</li>
+						</ul>
+					</article>
+					<article>
+						<div>
+							<span class="case-period">2022 - 2026</span>
+							<h3>Kubernetes operations</h3>
+						</div>
+						<p>Supported cluster reliability through autoscaling, persistent storage, config governance, migration support, and runtime troubleshooting.</p>
+						<ul>
+							<li>Kubernetes</li>
+							<li>KEDA</li>
+							<li>Redis</li>
+							<li>NFS</li>
+						</ul>
+					</article>
+					<article>
+						<div>
+							<span class="case-period">2021 - 2026</span>
+							<h3>Secrets and certificates</h3>
+						</div>
+						<p>Improved lifecycle handling for secrets and certificates through discovery, renewal, cleanup, secure injection, and monitoring workflows.</p>
+						<ul>
+							<li>Vault</li>
+							<li>Akeyless</li>
+							<li>CyberArk</li>
+							<li>PKI</li>
+						</ul>
+					</article>
+					<article>
+						<div>
+							<span class="case-period">2020 - 2026</span>
 							<h3>Enterprise automation</h3>
-							<p>Built and maintained scheduling and automation workflows for operational jobs, reconciliation, reporting, and platform checks.</p>
-							<ul>
-								<li>JAMS</li>
-								<li>PowerShell</li>
-								<li>Python</li>
-								<li>Ansible</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section id="work" class="section">
-				<div class="section-heading split-heading">
-					<div>
-						<p class="eyebrow">Projects</p>
-						<h2>Earlier software projects.</h2>
-					</div>
-					<p>
-						These are older portfolio projects. The main story today is DevOps and platform engineering,
-						but these show the software background that came before it.
-					</p>
-				</div>
-				<div class="project-grid">
-					<article class="project-card">
-						<img src="images/Aero.JPG" alt="AeroMax website preview" loading="lazy" />
-						<div>
-							<h3>AeroMax</h3>
-							<p>Static website built with HTML, JavaScript, and CSS.</p>
-							<div class="card-actions">
-								<a href="https://maximkoshel.github.io/AeroMax-webstie/" target="_blank" rel="noopener">Live</a>
-								<a href="https://github.com/maximkoshel/AeroMax-webstie" target="_blank" rel="noopener">Code</a>
-							</div>
 						</div>
-					</article>
-					<article class="project-card">
-						<img src="images/Idoctor.JPG" alt="IDoctor project logo" loading="lazy" />
-						<div>
-							<h3>IDoctor</h3>
-							<p>Java and MySQL project for doctor and patient communication workflows.</p>
-							<div class="card-actions">
-								<a href="https://youtu.be/Ix-lXqEWK8s" target="_blank" rel="noopener">Demo</a>
-								<a href="https://github.com/maximkoshel/IDoctor" target="_blank" rel="noopener">Code</a>
-							</div>
-						</div>
-					</article>
-					<article class="project-card">
-						<img src="images/brick_breaker.gif" alt="Brick Breaker gameplay preview" loading="lazy" />
-						<div>
-							<h3>Brick Breaker</h3>
-							<p>Classic arcade game built with Python and Pygame.</p>
-							<div class="card-actions">
-								<a href="https://github.com/maximkoshel/brick_breaker" target="_blank" rel="noopener">Code</a>
-							</div>
-						</div>
+						<p>Built scheduling and automation systems for operational jobs, reconciliation, reporting, platform checks, and repeatable production tasks.</p>
+						<ul>
+							<li>JAMS</li>
+							<li>PowerShell</li>
+							<li>Python</li>
+							<li>Ansible</li>
+						</ul>
 					</article>
 				</div>
 			</section>
 
-			<section id="resume" class="section resume-section">
-				<div class="resume-copy">
-					<p class="eyebrow">Resume</p>
-					<h2>Need the full details?</h2>
-					<p>
-						Open the resume PDF for education, work history, contact details, and a compact skills overview.
-					</p>
-					<div class="hero-actions">
-						<a class="button primary" href="Maxim_Koshel.pdf" target="_blank" rel="noopener">Resume PDF</a>
-						<a class="button secondary" href="grades.pdf" target="_blank" rel="noopener">Grades PDF</a>
-					</div>
+			<section id="timeline" class="section timeline-section">
+				<div class="section-heading compact">
+					<p class="eyebrow">Timeline</p>
+					<h2>Progression from automation foundations to platform ownership.</h2>
 				</div>
-				<a class="resume-preview" href="Maxim_Koshel.pdf" target="_blank" rel="noopener" aria-label="Open resume PDF">
-					<img src="images/resume_picture.JPG" alt="Resume preview" loading="lazy" />
-				</a>
+				<div class="timeline">
+					<article><span>2020</span><p>Environment tooling, Git strategy, and early operational automation.</p></article>
+					<article><span>2021</span><p>QA readiness, certificate cleanup, and deployment automation improvements.</p></article>
+					<article><span>2022</span><p>Ansible rollout, Kubernetes storage foundations, Docker templates, and scheduling migrations.</p></article>
+					<article><span>2023</span><p>YAML migration, ArgoCD evaluation, server upgrades, and scheduling at scale.</p></article>
+					<article><span>2024</span><p>KEDA, SonarQube, Dynatrace SaaS, certificate automation, and security scanning lifecycle.</p></article>
+					<article><span>2025</span><p>Istio adoption, AI/ML DevOps support, release ownership, and observability improvements.</p></article>
+					<article><span>2026</span><p>Istio production readiness, Vault integration, egress controls, monitoring, and vector database support.</p></article>
+				</div>
 			</section>
 
 			<section id="contact" class="contact-section">
 				<div>
 					<p class="eyebrow">Contact</p>
-					<h2>For DevOps, SRE, platform engineering, and infrastructure roles.</h2>
+					<h2>Available for senior DevOps, SRE, platform engineering, and infrastructure roles.</h2>
 				</div>
 				<div class="contact-actions">
 					<a href="mailto:maximkoshel95@gmail.com">maximkoshel95@gmail.com</a>
 					<a href="tel:+972544319624">0544319624</a>
 					<a href="https://www.linkedin.com/in/maxim-koshel-00a981197" target="_blank" rel="noopener">LinkedIn</a>
+					<a href="https://github.com/maximkoshel" target="_blank" rel="noopener">GitHub</a>
 				</div>
 			</section>
 		</main>
