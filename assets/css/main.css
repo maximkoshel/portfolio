@@ -379,6 +379,40 @@ h3 {
 	color: rgba(244, 239, 230, 0.68);
 }
 
+.experience-list {
+	display: grid;
+	gap: 0.9rem;
+}
+
+.experience-list article {
+	display: grid;
+	grid-template-columns: 300px minmax(0, 1fr);
+	gap: 1.5rem;
+	align-items: start;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: rgba(255, 250, 241, 0.82);
+	padding: 1.2rem;
+	box-shadow: 0 12px 32px rgba(21, 23, 22, 0.07);
+}
+
+.experience-meta {
+	display: grid;
+	gap: 0.55rem;
+}
+
+.experience-list ul {
+	display: grid;
+	gap: 0.65rem;
+	margin: 0;
+	padding-left: 1.1rem;
+	color: var(--muted);
+}
+
+.experience-list li::marker {
+	color: var(--sage);
+}
+
 .expertise-grid,
 .metric-grid {
 	display: grid;
@@ -536,6 +570,10 @@ h3 {
 	}
 
 	.case-list article {
+		grid-template-columns: 1fr;
+	}
+
+	.experience-list article {
 		grid-template-columns: 1fr;
 	}
 
