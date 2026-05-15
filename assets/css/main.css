@@ -28,13 +28,19 @@ html {
 body {
 	margin: 0;
 	background:
-		linear-gradient(120deg, rgba(201, 164, 92, 0.09), transparent 32%),
-		linear-gradient(300deg, rgba(40, 92, 77, 0.16), transparent 42%),
+		linear-gradient(118deg, rgba(201, 164, 92, 0.12), transparent 28%),
+		linear-gradient(300deg, rgba(40, 92, 77, 0.18), transparent 38%),
+		linear-gradient(180deg, #090909 0%, #11100e 48%, #090909 100%),
 		var(--black);
 	color: var(--ivory);
 	font-family: "Manrope", sans-serif;
 	font-size: 16px;
 	line-height: 1.65;
+}
+
+::selection {
+	background: var(--gold);
+	color: var(--black);
 }
 
 body::before {
@@ -47,6 +53,17 @@ body::before {
 		linear-gradient(90deg, rgba(245, 240, 230, 0.035) 1px, transparent 1px);
 	background-size: 72px 72px;
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 72%);
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background:
+		linear-gradient(105deg, transparent 0 18%, rgba(201, 164, 92, 0.055) 18% 18.2%, transparent 18.2% 100%),
+		linear-gradient(105deg, transparent 0 72%, rgba(255, 250, 240, 0.045) 72% 72.12%, transparent 72.12% 100%);
+	pointer-events: none;
 }
 
 a {
@@ -164,6 +181,20 @@ h3 {
 	padding: 7rem 0 5rem;
 }
 
+.hero::before {
+	content: "DEVOPS / SRE / PLATFORM";
+	position: absolute;
+	top: 2.2rem;
+	right: 0;
+	color: rgba(245, 240, 230, 0.08);
+	font-size: clamp(2rem, 8vw, 7rem);
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	line-height: 1;
+	white-space: nowrap;
+	z-index: -1;
+}
+
 .hero::after {
 	content: "";
 	position: absolute;
@@ -185,6 +216,7 @@ h3 {
 	border: 1px solid var(--line);
 	box-shadow: var(--shadow);
 	opacity: 0.48;
+	transform: rotate(-2deg);
 }
 
 .hero-visual::after {
@@ -206,6 +238,7 @@ h3 {
 .hero-content {
 	display: grid;
 	gap: 1.5rem;
+	animation: reveal-up 700ms ease both;
 }
 
 .eyebrow {
@@ -277,6 +310,7 @@ h3 {
 	background: linear-gradient(145deg, rgba(255, 250, 240, 0.11), rgba(255, 250, 240, 0.035));
 	padding: 1.35rem;
 	box-shadow: var(--shadow);
+	animation: reveal-up 800ms ease 120ms both;
 }
 
 .hero-card p,
@@ -314,6 +348,39 @@ h3 {
 	padding: 0.28rem 0.52rem;
 	font-size: 0.78rem;
 	font-weight: 800;
+}
+
+.signal-board {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 0.5rem;
+	border-top: 1px solid var(--line);
+	padding-top: 1rem;
+}
+
+.signal-board div {
+	display: grid;
+	gap: 0.35rem;
+	border: 1px solid rgba(201, 164, 92, 0.2);
+	background: rgba(9, 9, 9, 0.34);
+	padding: 0.75rem;
+}
+
+.signal-board span {
+	color: var(--muted);
+	font-size: 0.68rem;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.signal-board strong {
+	color: var(--gold);
+	font-family: "Instrument Serif", serif;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 0.9;
 }
 
 .section {
@@ -368,6 +435,15 @@ h3 {
 	border: 1px solid var(--line);
 	background: rgba(9, 9, 9, 0.32);
 	padding: 1.35rem;
+	transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.expertise-grid article:hover,
+.case-list article:hover,
+.metric-grid article:hover {
+	transform: translateY(-4px);
+	border-color: rgba(201, 164, 92, 0.45);
+	background: rgba(255, 250, 240, 0.07);
 }
 
 .expertise-grid span {
@@ -390,6 +466,7 @@ h3 {
 	border: 1px solid var(--line);
 	background: linear-gradient(145deg, rgba(255, 250, 240, 0.09), rgba(255, 250, 240, 0.03));
 	padding: 1.05rem;
+	transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .metric-grid strong {
@@ -423,6 +500,7 @@ h3 {
 	border: 1px solid var(--line);
 	background: rgba(9, 9, 9, 0.42);
 	padding: 1.2rem;
+	transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .timeline {
@@ -452,6 +530,16 @@ h3 {
 		var(--smoke);
 	padding: 3rem;
 	box-shadow: var(--shadow);
+}
+
+.contact-section::before {
+	content: "";
+	display: block;
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, var(--gold), transparent);
+	opacity: 0.65;
 }
 
 .contact-section h2 {
@@ -491,6 +579,13 @@ h3 {
 
 	.hero::after {
 		display: none;
+	}
+
+	.hero::before {
+		top: 1rem;
+		left: 0;
+		right: auto;
+		white-space: normal;
 	}
 
 	.hero-card {
@@ -543,6 +638,10 @@ h3 {
 		display: none;
 	}
 
+	.signal-board {
+		grid-template-columns: 1fr;
+	}
+
 	.metric-grid {
 		grid-template-columns: 1fr;
 	}
@@ -571,5 +670,17 @@ h3 {
 		width: 100%;
 		border-inline: 0;
 		padding: 2rem 1rem;
+	}
+}
+
+@keyframes reveal-up {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
